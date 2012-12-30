@@ -2,14 +2,18 @@ package kr.pe.ihoney.magpiealarm;
 
 import android.os.Bundle;
 import android.app.Activity;
+import android.util.Log;
 import android.view.Menu;
 
 public class MainActivity extends Activity {
 
+	private static String LOG_TAG = MainActivity.class.getSimpleName();
+	
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
+        Log.d(LOG_TAG, "MainActivity create call.");
     }
 
     @Override
